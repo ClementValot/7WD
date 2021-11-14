@@ -1,4 +1,4 @@
-from Effectable import Effectable
+from .Effectable import Effectable
 
 
 class Wonder:
@@ -7,6 +7,6 @@ class Wonder:
 
 
 class WonderLevel(Effectable):
-    def __init__(self):
-        
+    def __init__(self, effects=[]):
+        super().__init__(*effects)
         self.cost = 0
