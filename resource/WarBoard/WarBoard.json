@@ -1,6 +1,6 @@
 {
   "initial_token_position": 0,
-  "thresholds": {
+  "objectives": {
     "-9": "win",
     "-6": "5",
     "-3": "2",

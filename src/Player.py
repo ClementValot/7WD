@@ -1,10 +1,11 @@
-class Player:
-    def __init__(self, name:str):
-        self.name: str = name
-        self.coins: int = 0
+from typing import Literal
 
-    def coins(self):
-        return self.coins
+
+class Player:
+    def __init__(self, name: str, number: Literal[1, 2]):
+        self.name: str = name
+        self.number: Literal[1, 2] = number
+        self.coins: int = 0
 
     def give_coins(self, number_of_coins: int) -> int:
         self.coins += number_of_coins
